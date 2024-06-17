@@ -14,6 +14,12 @@ public class Topping {
     private Double price;
     private int calories;
 
+    public Topping(String name, Double price, int calories) {
+        this.name = name;
+        this.price = price;
+        this.calories = calories;
+    }
+
     @Override
     public String toString() {
         return "Topping{" +
