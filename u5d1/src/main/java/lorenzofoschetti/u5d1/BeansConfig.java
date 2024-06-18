@@ -2,6 +2,7 @@ package lorenzofoschetti.u5d1;
 
 
 import lorenzofoschetti.u5d1.entities.Drink;
+import lorenzofoschetti.u5d1.entities.Menu;
 import lorenzofoschetti.u5d1.entities.Pizza;
 import lorenzofoschetti.u5d1.entities.Topping;
 import org.springframework.context.annotation.Bean;
@@ -43,6 +44,11 @@ public class BeansConfig {
     @Bean
     public Drink Cocacola() {
         return new Drink("Cocacola", 1.8, 250);
+    }
+
+    @Bean
+    public Menu menu() {
+        return new Menu(Arrays.asList(Margherita(), Diavola()), Arrays.asList(mozzarella(), pomodoro(), salamePiccante()), Arrays.asList(Cocacola()));
     }
 }
 

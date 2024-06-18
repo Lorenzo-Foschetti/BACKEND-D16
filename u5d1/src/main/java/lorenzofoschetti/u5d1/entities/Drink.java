@@ -13,11 +13,6 @@ public class Drink {
     private Double price;
     private int calories;
 
-    public Drink(String name, Double price, int calories) {
-        this.name = name;
-        this.price = price;
-        this.calories = calories;
-    }
 
     @Override
     public String toString() {
